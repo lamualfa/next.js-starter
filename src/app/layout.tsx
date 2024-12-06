@@ -3,11 +3,11 @@ import "./layout.css"
 import { Inter } from "next/font/google"
 import type { PropsWithChildren } from "react"
 
-import type { Metadata } from "next"
 import clsx from "clsx"
+import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Sunday",
+  title: "Next.js Starter",
 }
 
 const interFont = Inter({
