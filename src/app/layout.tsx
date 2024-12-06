@@ -13,6 +13,7 @@ export const metadata: Metadata = {
 
 const interFont = Inter({
   subsets: ["latin"],
+  variable: "--font-inter",
 })
 
 interface RootLayoutProps extends PropsWithChildren {}
@@ -22,8 +23,8 @@ export default function RootLayout(props: RootLayoutProps) {
     <html lang="en">
       <body
         className={clsx(
-          interFont.className,
-          "scrollbar-thin",
+          "scrollbar-thin font-sans",
+          interFont.variable,
           isDevelopment && "debug-screens",
         )}
       >
