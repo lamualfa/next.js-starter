@@ -7,12 +7,13 @@
     "defaultBranch": "production"
   },
   "files": {
-    "ignoreUnknown": false,
+    "ignoreUnknown": true,
     "ignore": []
   },
   "formatter": {
     "enabled": true,
-    "indentStyle": "space"
+    "indentStyle": "space",
+    "formatWithErrors": true
   },
   "organizeImports": {
     "enabled": true
@@ -20,12 +21,40 @@
   "linter": {
     "enabled": true,
     "rules": {
-      "recommended": true
+      "recommended": true,
+      "correctness": {
+        "noUnusedVariables": "error",
+        "noNodejsModules": "error",
+        "noUnusedFunctionParameters": "error",
+        "noUnusedImports": "error"
+      },
+      "complexity": {
+        "noForEach": "error",
+        "useSimplifiedLogicExpression": "error"
+      },
+      "style": {
+        "noNegationElse": "error",
+        "useConsistentBuiltinInstantiation": "error",
+        "useCollapsedElseIf": "error",
+        "useFilenamingConvention": {
+          "level": "error",
+          "options": {
+            "filenameCases": [
+              "kebab-case"
+            ]
+          }
+        }
+      },
+      "nursery": {
+        "noDescendingSpecificity": "error",
+        "useGuardForIn": "error",
+        "useConsistentCurlyBraces": "error"
+      }
     }
   },
   "javascript": {
     "formatter": {
-      "quoteStyle": "single",
+      "quoteStyle": "double",
       "semicolons": "asNeeded"
     }
   }
