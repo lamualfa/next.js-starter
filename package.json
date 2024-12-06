@@ -3,10 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "postinstall": "lefthook install",
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "npx @biomejs/biome check --no-errors-on-unmatched --files-ignore-unknown=true ."
+    "lint": "npx @biomejs/biome check --write --no-errors-on-unmatched --files-ignore-unknown=true ."
   },
   "dependencies": {
     "next": "canary",

@@ -1,3 +1,3 @@
 export default function HomePage() {
-	return <main>Sunday</main>;
+  return <main>Next.js Template</main>
 }
