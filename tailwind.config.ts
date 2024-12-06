@@ -7,6 +7,9 @@ export default {
   content: ["./src/components/**/*.{ts,tsx}", "./src/app/**/*.{ts,tsx}"],
   theme: {
     extend: {},
+    debugScreens: {
+      position: ["bottom", "right"],
+    },
   },
   plugins: [debugScreensPlugin, scrollbarPlugin],
 } satisfies Config
