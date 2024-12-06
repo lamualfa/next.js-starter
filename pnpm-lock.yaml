@@ -18,6 +18,9 @@ importers:
         specifier: ^19.0.0
         version: 19.0.0(react@19.0.0)
     devDependencies:
+      '@biomejs/biome':
+        specifier: 1.9.5-nightly.81fdedb
+        version: 1.9.5-nightly.81fdedb
       '@types/node':
         specifier: ^20
         version: 20.17.9
@@ -42,6 +45,59 @@ packages:
   '@alloc/quick-lru@5.2.0':
     resolution: {integrity: sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==}
     engines: {node: '>=10'}
+
+  '@biomejs/biome@1.9.5-nightly.81fdedb':
+    resolution: {integrity: sha512-pKBxq0lT1SXPTN04i+52Zh3ncD84YTv3HKoz2CUusS+Eida6b+0Kb2dgPKcfC15z9IxtVx2EIShhpjPtwPYAXw==}
+    engines: {node: '>=14.21.3'}
+    hasBin: true
+
+  '@biomejs/cli-darwin-arm64@1.9.5-nightly.81fdedb':
+    resolution: {integrity: sha512-5P5Bl2EalSCIVaspoZk+J5yNS4UFyRE7AQT7bOaugJVSxiSRXFZvj5qNc67hLK0crt7SOBxK6AmHv01D6v3vPQ==}
+    engines: {node: '>=14.21.3'}
+    cpu: [arm64]
+    os: [darwin]
+
+  '@biomejs/cli-darwin-x64@1.9.5-nightly.81fdedb':
+    resolution: {integrity: sha512-5dyYFDWoshBCLFtxdOuOhPRH20X0ND9djcx2IYhI5KEWyyaBxig3DK+ktCiApOYbq9Vm4VaUosUgdBxGXuXgsQ==}
+    engines: {node: '>=14.21.3'}
+    cpu: [x64]
+    os: [darwin]
+
+  '@biomejs/cli-linux-arm64-musl@1.9.5-nightly.81fdedb':
+    resolution: {integrity: sha512-E6TqGZILHE2iLkv++JswQqr02fhpaOy94V4GN2VL84+NnOMzFOsZk4KgAysQPs6U6vaorkdQNgrSSadTdEG8yg==}
+    engines: {node: '>=14.21.3'}
+    cpu: [arm64]
+    os: [linux]
+
+  '@biomejs/cli-linux-arm64@1.9.5-nightly.81fdedb':
+    resolution: {integrity: sha512-umsZ1LDK20FEEi0CySpZJKfgf4CApJz/8/j8RSECYGMa7dBqVXWdpJu+2j6D/2lkrcSQYPJmFO0uTpvFd/9isw==}
+    engines: {node: '>=14.21.3'}
+    cpu: [arm64]
+    os: [linux]
+
+  '@biomejs/cli-linux-x64-musl@1.9.5-nightly.81fdedb':
+    resolution: {integrity: sha512-p9u8UDj6/ZcDTGDxOP+ryqQQBcwMcr1Ye09Bg06XOXiJVynizHJkpV3ZTmyOKsghMjTAkkrufXZcss49LVV0/w==}
+    engines: {node: '>=14.21.3'}
+    cpu: [x64]
+    os: [linux]
+
+  '@biomejs/cli-linux-x64@1.9.5-nightly.81fdedb':
+    resolution: {integrity: sha512-9vqY6AE8dfFB/QBmnnjHLL4bAhKxl1ttKK0yrza9oxr19ZYRC5zf4G95ie/V1k3wuzVnbh6D0kDhEkUaIwM9sQ==}
+    engines: {node: '>=14.21.3'}
+    cpu: [x64]
+    os: [linux]
+
+  '@biomejs/cli-win32-arm64@1.9.5-nightly.81fdedb':
+    resolution: {integrity: sha512-KersSrVxD1jw7INrOJ48bWdSX6UqC2peLkVQNERkGrGopqGgpv34clvZd28p3nfeBjTc3JjVEbWFrcjREA7Yeg==}
+    engines: {node: '>=14.21.3'}
+    cpu: [arm64]
+    os: [win32]
+
+  '@biomejs/cli-win32-x64@1.9.5-nightly.81fdedb':
+    resolution: {integrity: sha512-O7gWo2/V6zF8NhhtKm2sZdLpVfoAMGrVpWuhyKgHJjnOUvuiarUPQgG8pjaq6d3pNFNZrPDCl9cI2StiQjeDZA==}
+    engines: {node: '>=14.21.3'}
+    cpu: [x64]
+    os: [win32]
 
   '@emnapi/runtime@1.3.1':
     resolution: {integrity: sha512-kEBmG8KyqtxJZv+ygbEim+KCGtIq1fC22Ms3S4ziXmYKm8uyoLX0MHONVKwp+9opg390VaKRNt4a7A9NwmpNhw==}
@@ -736,6 +792,41 @@ packages:
 snapshots:
 
   '@alloc/quick-lru@5.2.0': {}
+
+  '@biomejs/biome@1.9.5-nightly.81fdedb':
+    optionalDependencies:
+      '@biomejs/cli-darwin-arm64': 1.9.5-nightly.81fdedb
+      '@biomejs/cli-darwin-x64': 1.9.5-nightly.81fdedb
+      '@biomejs/cli-linux-arm64': 1.9.5-nightly.81fdedb
+      '@biomejs/cli-linux-arm64-musl': 1.9.5-nightly.81fdedb
+      '@biomejs/cli-linux-x64': 1.9.5-nightly.81fdedb
+      '@biomejs/cli-linux-x64-musl': 1.9.5-nightly.81fdedb
+      '@biomejs/cli-win32-arm64': 1.9.5-nightly.81fdedb
+      '@biomejs/cli-win32-x64': 1.9.5-nightly.81fdedb
+
+  '@biomejs/cli-darwin-arm64@1.9.5-nightly.81fdedb':
+    optional: true
+
+  '@biomejs/cli-darwin-x64@1.9.5-nightly.81fdedb':
+    optional: true
+
+  '@biomejs/cli-linux-arm64-musl@1.9.5-nightly.81fdedb':
+    optional: true
+
+  '@biomejs/cli-linux-arm64@1.9.5-nightly.81fdedb':
+    optional: true
+
+  '@biomejs/cli-linux-x64-musl@1.9.5-nightly.81fdedb':
+    optional: true
+
+  '@biomejs/cli-linux-x64@1.9.5-nightly.81fdedb':
+    optional: true
+
+  '@biomejs/cli-win32-arm64@1.9.5-nightly.81fdedb':
+    optional: true
+
+  '@biomejs/cli-win32-x64@1.9.5-nightly.81fdedb':
+    optional: true
 
   '@emnapi/runtime@1.3.1':
     dependencies:
