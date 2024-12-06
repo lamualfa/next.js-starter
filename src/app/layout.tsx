@@ -1,16 +1,16 @@
-import './layout.css'
+import "./layout.css"
 
-import { Inter } from 'next/font/google'
-import type { PropsWithChildren } from 'react'
+import { Inter } from "next/font/google"
+import type { PropsWithChildren } from "react"
 
-import type { Metadata } from 'next'
+import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: 'Sunday',
+  title: "Sunday",
 }
 
 const fontInter = Inter({
-  subsets: ['latin'],
+  subsets: ["latin"],
 })
 
 interface RootLayoutProps extends PropsWithChildren {}
