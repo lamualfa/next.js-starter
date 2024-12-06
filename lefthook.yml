@@ -2,3 +2,7 @@ pre-commit:
   commands:
     check:
       run: pnpm run lint
+commit-msg:
+  commands:
+    lint:
+      run: pnpm exec commitlint -e
