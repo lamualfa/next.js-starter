@@ -36,6 +36,7 @@
         "noNegationElse": "error",
         "useConsistentBuiltinInstantiation": "error",
         "useCollapsedElseIf": "error",
+        "useExplicitLengthCheck": "error",
         "useFilenamingConvention": {
           "level": "error",
           "options": {
