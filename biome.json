@@ -46,7 +46,14 @@
       "nursery": {
         "noDescendingSpecificity": "error",
         "useGuardForIn": "error",
-        "useConsistentCurlyBraces": "error"
+        "useConsistentCurlyBraces": "error",
+        "useSortedClasses": {
+          "level": "error",
+          "fix": "safe",
+          "options": {
+            "functions": ["clsx", "tw"]
+          }
+        }
       }
     }
   },
