@@ -24,7 +24,6 @@
       "recommended": true,
       "correctness": {
         "noUnusedVariables": "error",
-        "noNodejsModules": "error",
         "noUnusedFunctionParameters": "error",
         "noUnusedImports": "error"
       },
