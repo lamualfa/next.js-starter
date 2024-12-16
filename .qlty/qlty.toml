@@ -39,7 +39,6 @@ exclude_patterns = [
   "**/testdata/**",
   "**/vendor/**",
   "**/assets/**",
-  "**/pnpm-lock.yaml"
 ]
 
 test_patterns = [
@@ -65,12 +64,6 @@ name = "biome"
 version = "1.9.4"
 
 [[plugin]]
-name = "checkov"
-
-[[plugin]]
-name = "dotenv-linter"
-
-[[plugin]]
 name = "eslint"
 version = "8.57.0"
 package_file = "package.json"
@@ -80,14 +73,12 @@ package_filters = ["eslint"]
 name = "osv-scanner"
 
 [[plugin]]
-name = "trivy"
-drivers = [
-  "config",
-  "fs-vuln",
-]
-
-[[plugin]]
 name = "trufflehog"
 
 [[plugin]]
 name = "yamllint"
+
+[[ignore]]
+plugins = ["yamllint"]
+rules = ["line-length", "truthy"]
+file_patterns = ["pnpm-lock.yaml", "lefthook.yml"]
