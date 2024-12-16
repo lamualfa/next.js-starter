@@ -16,9 +16,7 @@ const interFont = Inter({
   variable: "--font-inter",
 })
 
-interface RootLayoutProps extends PropsWithChildren {}
-
-export default function RootLayout(props: RootLayoutProps) {
+export default function RootLayout(props: PropsWithChildren) {
   return (
     <html lang="en">
       <body

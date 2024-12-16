@@ -1,9 +1,11 @@
 pre-commit:
   commands:
+    format:
+      run: qlty fmt
     check:
-      glob: '*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}'
-      run: npx @biomejs/biome check --write --no-errors-on-unmatched --files-ignore-unknown=true --organize-imports-enabled=true {staged_files}
-      stage_fixed: true
+      run: qlty check -a --no-upgrade-check
+    smells:
+      run: qlty smells -a
 commit-msg:
   commands:
     lint:
