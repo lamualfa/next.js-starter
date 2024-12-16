@@ -1,6 +1,6 @@
 import scrollbarPlugin from "tailwind-scrollbar"
 import type { Config } from "tailwindcss"
-// @ts-ignore
+// @ts-expect-error: no-types for tailwindcss-debug-screens
 import debugScreensPlugin from "tailwindcss-debug-screens"
 import defaultTheme from "tailwindcss/defaultTheme"
 
