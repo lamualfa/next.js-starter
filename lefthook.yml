@@ -1,11 +1,13 @@
 pre-commit:
+  piped: true
   commands:
     format:
       run: qlty fmt
+      stage_fixed: true
     check:
-      run: qlty check -a --no-upgrade-check
+      run: qlty check --no-upgrade-check
     smells:
-      run: qlty smells -a
+      run: qlty smells
 commit-msg:
   commands:
     lint:
