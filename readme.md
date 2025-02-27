@@ -8,5 +8,6 @@ I'm tired of making the same Next.js project over and over again. So this is the
 - Next.js v15
 - Tailwind CSS v3
 - Biome v1.9.4
-- Lefthook v1.9.0
+- Eslint v9
+- Lefthook v1.11.2
 - Commitlint v19
