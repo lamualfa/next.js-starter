@@ -5,7 +5,8 @@ pre-commit:
       run: qlty fmt
       stage_fixed: true
     check:
-      run: qlty check --no-upgrade-check
+      run: qlty check --no-upgrade-check --fix
+      stage_fixed: true
     smells:
       run: qlty smells
 commit-msg:
